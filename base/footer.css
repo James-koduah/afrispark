@@ -105,10 +105,21 @@ footer .action_button{
 }
 
 @media (max-width: 650px) {
+    #footer_logo{
+        padding-left: 10%;
+    }
     #footer_body{
         flex-direction: column;
     }
+    #footer_socials{
+        width: 80%;
+        padding: 0 10%;
+    }
+    #footer_links{
+        justify-content: space-around;
+    }
     .footer_links_item{
-        width: 40%
+        width: 40%;
+        padding-left: 10%;
     }
 }
