@@ -11,6 +11,7 @@
     /* --ma-bg: #050405; */
     --su-bg: teal;
     --at-bg: rgb(3, 113, 138);
+    --at-bg2: #26a6a6;
     --text-color: #1f1f1f;
     /* --text-color: #eee; */
     --border-color: #00575722;
@@ -47,6 +48,7 @@ img{
 input, textarea{
     width: 96%;
     padding: 0 2%;
+    border: none;
 }
 
 body{
@@ -180,9 +182,10 @@ body::-webkit-scrollbar-thumb{
     justify-content: center;
 }
 
-.nav_links_item a ion-icon{
+.nav_links_item a i{
     margin-left: 3px;
     font-size: 120%;
+    margin-top: 0.2em;
 }
 #nav_links .action_button{
     padding: 15px 20px;

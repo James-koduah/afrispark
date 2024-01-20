@@ -8,6 +8,9 @@
     #nav_side{
         display: none;
     }
+    #main{
+        width: 100%;
+    }
 }
 
 #hero{
@@ -42,7 +45,9 @@
         border-bottom: none;
     }
     #hero_text{
-        width: 80%;
+        width: 90%;
+        height: fit-content;
+        padding: 70px 5%;
     }
 }
 
@@ -370,4 +375,15 @@ main img{
 }
 #newsletter input::placeholder{
     color: var(--ma-bg);
+}
+
+
+@media (max-width: 800px) {
+    #about_text{
+        width: 100%;
+        padding: 0;
+    }
+    #newsletter{
+        width: 100%
+    }
 }
