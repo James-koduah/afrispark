@@ -1,0 +1,26 @@
+<nav id="nav_top">
+    <div id="logo">
+        <!-- <img src="" alt=""> -->
+        <p>AfriSpark</p>
+    </div>
+    <ul class="nav_links">
+        {% for item in site.data.nav %}
+        {% if item.link != page.url %}
+        <li class="nav_links_item">
+            <a href="{{item.link}}">{{item.name}} {% if item.dropdown %}<ion-icon name="chevron-down"></ion-icon>{%endif%}</a>
+            {% if item.dropdown %}
+            <ul class="nav_dropdown">
+                {% for elem in item.dropdown %}
+                <li>
+                    <a href="{{elem.link}}">{{elem.name}}</a>
+                </li>
+                {% endfor %}
+            </ul>
+            {% endif %}
+        </li>
+        {% endif %}
+        {% endfor %}
+    </ul>
+</nav>
+
+

@@ -1,0 +1,298 @@
+@import url('https://fonts.googleapis.com/css?family=Cabin');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@100&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+:root{
+    --ma-bg: #f7f7f7;
+    /* --ma-bg: #050405; */
+    --su-bg: teal;
+    --at-bg: rgb(3, 113, 138);
+    --text-color: #1f1f1f;
+    /* --text-color: #eee; */
+    --border-color: #00575722;
+    --border: 1px var(--border-color) solid;
+    --sans: Oscine, sans-serif;
+    --cam: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    --verdana: Verdana, Geneva, Tahoma, sans-serif;
+    --cabin-ver: "Cabin", Verdana, Geneva, Tahoma, sans-serif;
+    --cabin-sans: "Cabin", Oscine, sans-serif;
+    --work-sans: "Work Sans", Oscine, sans-serif;
+    --work-ver: "Work Sans", Verdana, Geneva, Tahoma, sans-serif;
+    --work-cabin-ver: "Work Sans", "Cabin", Verdana, Geneva, Tahoma, sans-serif;
+    --mons: "Montserrat", Arial, Tahoma, sans-serif;
+    --museo: "Museo Sans Rounded",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+    --open-sans: open sans,Arial,Verdana,Sans-Serif;
+    --apercu: 'Apercu',Helvetica,Arial,sans-serif;
+}
+
+input:focus, textarea:focus{
+    outline: none;
+}
+button{
+    cursor: pointer;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+input, textarea{
+    width: 96%;
+    padding: 0 2%;
+}
+
+body{
+    width: 100vw;
+    font-family: var(--cabin-sans);
+    background-color: var(--ma-bg);
+    color: var(--text-color);
+    overflow-x: hidden;
+    font-size: 5px;
+}
+/* body::-webkit-scrollbar{
+    width: 10px;
+}
+body::-webkit-scrollbar-track{
+    background: var(--su-bg);
+}
+body::-webkit-scrollbar-thumb{
+    background: #999;
+} */
+
+.bottom_scrollbar::-webkit-scrollbar{
+    height: 6px;
+}
+.bottom_scrollbar::-webkit-scrollbar-track{
+    background: var(--ma-bg);
+}
+.bottom_scrollbar::-webkit-scrollbar-thumb{
+    background: var(--at-bg);
+    border-radius: 10px;
+}
+
+.action_button{
+    position: relative;
+    width: fit-content;
+    height: fit-content;
+    padding: 10px 20px;
+    font-size: 2.7em;
+    background: var(--at-bg);
+    color: var(--ma-bg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 1px 1px var(--su-bg);
+    overflow: hidden;
+    border-radius: 2px;
+    transition: 0.5s;
+}
+.action_button ion-icon{
+    font-size: 130%;
+    margin: 0 3px;
+}
+.action_button:hover{
+    background: #000;
+    font-size: 2.6em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#nav_top{
+    width: calc(100vw - 20px);
+    padding: 5px 10px;
+    height: 50px;
+    max-height: 25vh;
+    color: var(--su-bg);
+    background-color: var(--ma-bg);
+    border-bottom: var(--border);
+    border-radius: 3px;
+    position: fixed;
+    top: 0vh;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    flex-shrink: 0;
+}
+#logo img{
+    width: 20px;
+    height: 20px;
+}
+#logo p{
+    font-size: 3.7em;
+}
+
+
+
+
+.nav_links{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    z-index: 100;
+}
+.nav_links_item{
+    position: relative;
+    list-style-type: none;
+    width: 25%;
+    min-width: fit-content;
+    height: 100%;
+    font-size: 2.5em;
+    letter-spacing: 1px;
+    display: flex;
+    align-items: center;
+}
+.nav_links_item:hover{
+    border-bottom:2px var(--su-bg) solid;
+}
+.nav_links_item a{
+    width: 100%;
+    height: 100%;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav_links_item a ion-icon{
+    margin-left: 3px;
+    font-size: 120%;
+}
+#nav_links .action_button{
+    padding: 15px 20px;
+    width: fit-content;
+    height: fit-content;
+    font-size: inherit;
+    font-weight: 400;
+}
+.nav_links_item:hover .nav_dropdown{
+    display: block;
+}
+
+.nav_dropdown{
+    position: absolute;
+    display: none;
+    width: 200px;
+    top: 102%;
+    right: 0;
+    background-color: var(--ma-bg);
+    border: 1px var(--su-bg) solid;
+    border-top: none;
+    overflow: hidden;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    z-index: 101;
+}
+.nav_dropdown li{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav_dropdown li a{
+    justify-content: left;
+}
+.nav_dropdown li a:hover{
+    background: var(--at-bg);
+}
+
+@media (max-width: 700px) {
+    .nav_links{
+        display: none;
+    }
+}
+
+
+
+
+#nav_side{
+    position: sticky;
+    top: 60px;
+    width: 150px;
+    height: calc(100vh - 40px);
+    flex-shrink: 0;
+    border-right: var(--border);
+}
+#nav_side a{
+    padding: 2px 0;
+}
+#nav_side a:hover{
+    border-bottom: var(--border);
+}
+
+.nav_side_item{
+    list-style: none;
+    display: block;
+    width: calc(100% - 20px);
+    padding: 5px 10px;
+    
+}
+
+.nav_side_item_top{
+    font-size: 2.3em;
+    font-weight: 600;
+    display: block;
+}
+
+.nav_side_item_second{
+    width: 95%;
+    margin-left: 5%;
+    padding-top: 2px;
+}
+.nav_side_item_second li{
+    list-style: none;
+}
+.nav_side_item_second li a{
+    font-size: 2.3em;
+    display: block;
+    padding: 3px 0 5px 0;
+}
+
+
+
+
+#nav_side_close{
+    height: 30px;
+    font-size: 3.3em;
+    padding-top: 5px;
+    color: var(--su-bg);
+}
+
+#nav_side_search{
+    height: 30px;
+    font-size: 2em;
+    border-radius: 10px;
+    border: var(--border);
+}
+
+
+#main{
+    padding-top: 60px;
+}

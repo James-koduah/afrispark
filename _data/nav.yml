@@ -1,0 +1,35 @@
+- name: Home
+  link: /
+
+- name: Technology
+  link: /technology
+  dropdown:
+    - name: Innovations
+      link: /technology/innovations
+    - name: Tech Entrepreneurs
+      link: /technology/tech_entrepreneurs
+    - name: Tech Trends
+      link: /technology/tech_trends
+
+- name: Science
+  link: /science
+  dropdown:
+    - name: Breakthroughs
+      link: /science/breakthroughs
+    - name: African Scientists
+      link: /science/african_scientists
+    - name: Science News
+      link: /science/science_news
+
+- name: Creativity
+  link: /creativity
+  dropdown: 
+    - name: Achievements
+      link: /creativity
+    - name: Creative Minds
+      link: /creativity
+    - name: Cultural Innovations
+      link: /creativity
+
+- name: About
+  link: /about/

@@ -1,0 +1,18 @@
+- Home
+    - Featured Stories
+    - Latest Articles
+    - Categories
+        - Technology
+            - Innovations in African Tech
+            - Profiles of Tech Entrepreneurs
+            - Tech Trends in Africa
+        - Science
+            - Scientific Breakthroughs in Africa
+            - Profiles of African Scientists
+            - Science and Innovation News
+        - Creativity
+            - Artistic Achievements in Africa
+            - Creative Minds Spotlight
+            - Cultural Innovations
+    - About Us
+    - Contact Us
