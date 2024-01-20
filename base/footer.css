@@ -19,7 +19,6 @@ footer .action_button{
     width: 96%;
     padding: 30px 2%;
     display: flex;
-    flex-wrap: wrap;
 }
 
 
@@ -43,7 +42,7 @@ footer .action_button{
 }
 #footer_newsletter input{
     height: 30px;
-    border-radius: 5px;
+    border-radius: 2px;
     margin-bottom: 5px;
     font-size: 2.3em;
 }
@@ -73,10 +72,15 @@ footer .action_button{
     
 }
 
-
+#footer_links{
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+}
 .footer_links_item{
-    min-width: 230px;
-    padding-left: 10%;
+    width: 15%;
+    min-width: fit-content;
+    padding-left: 5%;
 }
 
 .footer_links_item header{
@@ -90,13 +94,21 @@ footer .action_button{
     margin-bottom: 10px;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 900px) {
     .footer_links_item{
-        width: 30%;
+        width: 22%;
         min-width: 0;
         padding-left: 10%;
-        padding-right: 5%;
         margin-bottom: 30px;
     }
     
+}
+
+@media (max-width: 650px) {
+    #footer_body{
+        flex-direction: column;
+    }
+    .footer_links_item{
+        width: 40%
+    }
 }
