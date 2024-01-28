@@ -8,7 +8,7 @@
         {% for item in site.data.nav %}
         {% if item.link != page.url %}
         <li class="nav_side_item">
-            <a class="nav_side_item_top" href="{{item.link}}">{{item.name}}</a>
+            <a class="nav_side_item_top" href="{{item.link}}"><p>{{item.name}}</p> {{item.icon}}</a>
             {% if item.dropdown %}
             <ul class="nav_side_item_second">
                 {% for elem in item.dropdown %}

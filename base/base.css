@@ -9,7 +9,8 @@
 :root{
     --ma-bg: #f7f7f7;
     /* --ma-bg: #050405; */
-    --su-bg: teal;
+    /* --ma-bg:  #00FFFF; */
+    --su-bg: #008080;
     --at-bg: rgb(3, 113, 138);
     --at-bg2: #26a6a6;
     --text-color: #1f1f1f;
@@ -87,7 +88,7 @@ body::-webkit-scrollbar-thumb{
     padding: 10px 20px;
     font-size: 2.7em;
     background: var(--at-bg);
-    color: var(--ma-bg);
+    color: #fff;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -120,8 +121,8 @@ body::-webkit-scrollbar-thumb{
 
 #nav_top{
     width: calc(100vw - 20px);
-    padding: 5px 10px;
-    height: 50px;
+    padding: 0px 10px;
+    height: 60px;
     max-height: 25vh;
     color: var(--su-bg);
     background-color: var(--ma-bg);
@@ -202,10 +203,10 @@ body::-webkit-scrollbar-thumb{
     position: absolute;
     display: none;
     width: 200px;
-    top: 102%;
+    top: calc(100% + 2px);
     right: 0;
     background-color: var(--ma-bg);
-    border: 1px var(--su-bg) solid;
+    /* border: 1px var(--su-bg) solid; */
     border-top: none;
     overflow: hidden;
     border-bottom-left-radius: 3px;
@@ -259,9 +260,13 @@ body::-webkit-scrollbar-thumb{
 }
 
 .nav_side_item_top{
+    width: 90%;
+    padding-right: 10% !important;
     font-size: 2.3em;
     font-weight: 600;
-    display: block;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .nav_side_item_second{

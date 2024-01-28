@@ -3,6 +3,7 @@
 
 - name: Technology
   link: /technology
+  icon: <i class="fa-solid fa-microchip"></i>
   dropdown:
     - name: Innovations
       link: /technology/innovations
@@ -13,6 +14,7 @@
 
 - name: Science
   link: /science
+  icon: <i class="fa-solid fa-flask"></i>
   dropdown:
     - name: Breakthroughs
       link: /science/breakthroughs
@@ -23,6 +25,7 @@
 
 - name: Creativity
   link: /creativity
+  icon: <i class="fa-regular fa-lightbulb"></i>
   dropdown: 
     - name: Achievements
       link: /creativity
