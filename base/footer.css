@@ -23,7 +23,7 @@ footer .action_button{
 
 
 #footer_socials{
-    width: 200px;
+    width: 94%;
     height: fit-content;
     display: flex;
     flex-wrap: wrap;
@@ -42,9 +42,10 @@ footer .action_button{
 }
 #footer_newsletter input{
     height: 30px;
-    border-radius: 2px;
+    border-radius: 7px;
     margin-bottom: 5px;
     font-size: 2.3em;
+    margin: 10px 0;
 }
 
 .footer_social{

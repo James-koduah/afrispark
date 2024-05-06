@@ -7,10 +7,10 @@
   dropdown:
     - name: Innovations
       link: /technology/innovations
-    - name: Tech Entrepreneurs
-      link: /technology/tech_entrepreneurs
     - name: Tech Trends
       link: /technology/tech_trends
+    - name: Tech Entrepreneurs
+      link: /technology/tech_entrepreneurs
 
 - name: Science
   link: /science
@@ -18,7 +18,7 @@
   dropdown:
     - name: Breakthroughs
       link: /science/breakthroughs
-    - name: African Scientists
+    - name: Scientists
       link: /science/african_scientists
     - name: Science News
       link: /science/science_news
@@ -29,7 +29,7 @@
   dropdown: 
     - name: Achievements
       link: /creativity
-    - name: Creative Minds
+    - name: Creative Ideas
       link: /creativity
     - name: Cultural Innovations
       link: /creativity
