@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Cabin');
-@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@100&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@100&display=swap'); */
 
 *{
     padding: 0;
@@ -122,7 +122,7 @@ body::-webkit-scrollbar-thumb{
 #nav_top{
     width: calc(100vw - 20px);
     padding: 0px 10px;
-    height: 60px;
+    height: 50px;
     max-height: 25vh;
     color: var(--su-bg);
     background-color: var(--ma-bg);
@@ -148,7 +148,7 @@ body::-webkit-scrollbar-thumb{
     margin-right: 3px;
 }
 #logo p{
-    font-size: 3.7em;
+    font-size: 3.9em;
 }
 
 
@@ -303,5 +303,5 @@ body::-webkit-scrollbar-thumb{
 
 
 #main{
-    padding-top: 60px;
+    padding-top: 50px;
 }

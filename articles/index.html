@@ -1,0 +1,36 @@
+---
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>{{page.title}}</title>
+    {% include base_head.html %}
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
+</head>
+<body>
+    {%include nav.html %}   
+    <div id="main">
+        <div id="filters">
+            <div id="all_filters_button">Tags</div>
+            <div id="tags">
+                <!-- <div class="filter">Science</div>
+                <div class="filter">Technology</div>
+                <div class="filter">Creativity</div>
+                <div class="filter">Africa</div>
+                <div class="filter">Euroupe</div> -->
+            </div>
+        </div> 
+
+        <div class="blog_feild">
+            {% for i in (1..20) %}
+            <div class="blog_feild_item">
+                <div class="blog_feild_item_img"><img src="/images/tech_startup1.jpg" alt=""></div>
+                <div class="blog_feild_item_text"><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur sed eum aliquid iste veritatis repudiandae unde officia corrupti voluptas, suscipit officiis qui magnam quam, tempora eaque, repellendus consectetur error maiores.</p></div>
+                <a href="" class="action_button">Read</a>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</body>
+</html>

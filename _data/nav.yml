@@ -2,37 +2,34 @@
   link: /
 
 - name: Technology
-  link: /technology
+  link: /articles?tags=Technology
   icon: <i class="fa-solid fa-microchip"></i>
   dropdown:
     - name: Innovations
-      link: /technology/innovations
+      link: /articles?tags=technology+innovations
     - name: Tech Trends
-      link: /technology/tech_trends
+      link: /articles?tags=technology+tech_trends
     - name: Tech Entrepreneurs
-      link: /technology/tech_entrepreneurs
+      link: /articles?tags=technology+tech_entrepreneurs
 
 - name: Science
-  link: /science
+  link: /articles?tags=science
   icon: <i class="fa-solid fa-flask"></i>
   dropdown:
     - name: Breakthroughs
-      link: /science/breakthroughs
+      link: /articles?tags=science+breakthroughs
     - name: Scientists
-      link: /science/african_scientists
+      link: /articles?tags=science+scientists
     - name: Science News
-      link: /science/science_news
+      link: /articles?tags=science+science_news
 
 - name: Creativity
-  link: /creativity
+  link: /articles?tags=creativity
   icon: <i class="fa-regular fa-lightbulb"></i>
   dropdown: 
     - name: Achievements
-      link: /creativity
+      link: /articles?tags=creativity+achievements
     - name: Creative Ideas
-      link: /creativity
+      link: /articles?tags=creativity+creative_ideas
     - name: Cultural Innovations
-      link: /creativity
-
-- name: About
-  link: /about/
+      link: /articles?tags=creativity+cultural_innovations
